@@ -1,25 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
-        <title>Design System Template</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <div class="container"></div>
-   <h1>Design System Template</h1> 
-   <section>
-    <h2>Color Palette</h2>
-    <div class="color-palette">
-        <div class="color-swatch" style="background-color":var(--color-primary);
-    </div>
-   </section>
-</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Design System</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Design System</h1>
+
+  <section>
+    <h2>Color Palette</h2>
+
+    <div class="color-swatch">
+      <div class="swatch background"></div>
+      <p>Background: #F5F1ED</p>
+      
+    </div>
+
+    <div class="color-swatch">
+      <div class="swatch primary"></div>
+      <p>Primary: #BD4089 4.38:1</p>
+    </div>
+
+    <div class="color-swatch">
+      <div class="swatch secondary"></div>
+      <p>Secondary: #402E2A Ratio: 11.37:1</p>
+    </div>
+
+    <div class="color-swatch">
+      <div class="swatch text"></div>
+      <p>Text: #0D1821</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Typography</h2>
+    <h1>Heading 1 Example</h1>
+    <h2>Heading 2 Example</h2>
+    <h3>Heading 3 Example</h3>
+    <p>This is body text using Quattrocento Sans. It is clean, readable, and designed for long-form reading.</p>
+    <small>This is small helper text.</small>
+  </section>
+
+  <section>
+    <h2>Spacing System</h2>
+    <p>Spacing values: 8px, 16px, 24px, 32px, 48px (8px base scale).</p>
+  </section>
+
+  <section>
+    <h2>Components</h2>
+
+    <a href="#" class="button">Primary Button</a>
+
+    <p>
+      Example link:
+      <a href="#">Visit My Portfolio</a>
+    </p>
+  </section>
+
+</body>
 </html>
