@@ -6,22 +6,44 @@ html {
   font-family: sans-serif;
 }
 
-body {
-  margin: 0;
-  background: #ccc;
-}
 
 article {
   width: 210mm;
   height: 297mm;
   margin: 20px auto;
   position: relative;
+
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.05) 12%,
+      rgba(0, 0, 0, 0) 35%,
+      rgba(0, 0, 0, 0) 65%,
+      rgba(0, 0, 0, 0.05) 88%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("top-image.png"),
+    url("bottom-image.png");
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center top, center top, center bottom;
+  background-size: cover, contain, contain;
+
+
+  background-color: white;
+
+
+  border-top: 1mm solid #7b4a2e;
+  border-bottom: 1mm solid #7b4a2e;
 }
 
 address {
   position: absolute;
   bottom: 8mm;
   right: 20mm;
+  
 }
 
 h1 {
@@ -36,10 +58,7 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
-  background: no-repeat url(log.png);
+  background: no-repeat url(logo.png);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.3));
 }
- 
-selector {
-  background: url(top-image.png) no-repeat top/cover;
-  background:  url(bottom-image.png) no-repeat bottom/cover;
-}
+
