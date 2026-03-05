@@ -1,15 +1,14 @@
-.flexbox-1{
 body {
   font: 1.2em / 1.5 sans-serif;
 }
-nav ul {
+.nav1 ul {
   max-width: 750px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-nav a:link,
-nav a:visited {
+.nav1 a:link,
+.nav1 a:visited {
   background-color: #4d7298;
   border: 2px solid #77a6b6;
   border-radius: 0.5em;
@@ -19,9 +18,60 @@ nav a:visited {
   text-decoration: none;
 }
 
-nav ul {
+.nav1 ul {
   /* Add styles here */
   display: flex;
   justify-content: space-between;
 }
+
+.flex2 ul {
+  max-width: 750px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex2 li {
+  background-color: #4d7298;
+  border: 2px solid #77a6b6;
+  border-radius: 0.5em;
+  color: white;
+  padding: 0.5em;
+}
+
+.flex2 ul {
+  /* Add styles here */
+  display: flex;
+}
+
+.flex2 li {
+  /* Add styles here */
+    flex: 1;
+}
+
+.flex3 ul {
+  width: 450px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex3 li {
+  background-color: #4d7298;
+  border: 2px solid #77a6b6;
+  border-radius: 0.5em;
+  color: white;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.flex3 ul {
+  /* Add styles here */
+   display: flex;
+  flex-wrap: wrap;
+}
+
+.flex3 li {
+  /* Add styles here */
+    flex: auto;
 }
