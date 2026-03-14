@@ -336,7 +336,7 @@ section { padding: var(--space-7) 0; }
   letter-spacing: .05em; text-transform: uppercase;
   transition: background var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
 }
-.skill-tag { background: var(--primary); color: var(--white); border-color: var(--primary); }
+.skill-tag: { background: var(--primary); color: var(--white); border-color: var(--primary); }
 
 
 .timeline { position: relative; padding-left: var(--space-5); }
