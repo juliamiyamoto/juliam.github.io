@@ -1097,6 +1097,18 @@ section {
     text-align: center;
   }
 
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline__item::before {
+    display: none;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
   .project-block__header {
     flex-direction: column;
   }
@@ -1222,6 +1234,18 @@ section {
 }
 
 @media (max-width: 900px) {
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline__item::before {
+    display: none;
+  }
+
+  .timeline {
+    padding-left: 0;
+  }
+
   .project-block__header {
     flex-direction: column;
   }
