@@ -345,16 +345,7 @@ section { padding: var(--space-7) 0; }
   background: linear-gradient(to bottom, var(--primary), var(--primary-mid), transparent);
   border-radius: var(--radius-pill);
 }
-.timeline__item { position: relative; margin-bottom: var(--space-5); }
-.timeline__item::before {
-  content: ''; position: absolute;
-  left: calc(-1 * var(--space-5) - 1px); top: 8px;
-  width: 12px; height: 12px;
-  background: var(--primary); border-radius: 50%;
-  border: 3px solid var(--background);
-  box-shadow: 0 0 0 2px var(--primary);
-  transform: translateX(-5px);
-}
+
 .timeline__item:first-child::before { box-shadow: 0 0 0 2px var(--primary), 0 0 12px var(--primary); }
 .timeline__meta  { display: flex; align-items: center; gap: var(--space-2); margin-bottom: 6px; flex-wrap: wrap; }
 .timeline__date  { font-family: 'Oswald', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--primary); background: var(--primary-light); padding: 3px 10px; border-radius: var(--radius-pill); }
