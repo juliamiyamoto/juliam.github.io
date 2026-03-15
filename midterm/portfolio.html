@@ -3,73 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Julia Miyamoto — creative technology and design projects." />
+  <meta name="description" content="Portfolio of Julia Miyamoto — design, photography, and fabrication projects." />
   <title>Portfolio — Julia Miyamoto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* PDF viewer — uses existing site tokens only */
-    .project-block {
-      margin-bottom: var(--space-6);
-      padding-bottom: var(--space-6);
-      border-bottom: 1px solid var(--surface-dark);
-    }
-    .project-block:last-of-type {
-      border-bottom: none;
-    }
-    .project-block__header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: var(--space-3);
-      margin-bottom: var(--space-3);
-    }
-    .project-block__header h2 {
-      margin-bottom: 4px;
-    }
-    .pdf-wrap {
-      border: 1px solid var(--surface-dark);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      background: var(--surface);
-    }
-    .pdf-wrap object {
-      display: block;
-      width: 100%;
-      height: 700px;
-      border: none;
-    }
-    .pdf-fallback {
-      padding: var(--space-4);
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: var(--space-2);
-    }
-    .pdf-note {
-      font-size: var(--small);
-      opacity: 0.55;
-      margin-top: var(--space-1);
-      max-width: none;
-    }
-    @media (max-width: 900px) {
-      .pdf-wrap object { height: 520px; }
-      .project-block__header { flex-direction: column; }
-    }
-    @media (max-width: 600px) {
-      .pdf-wrap object { height: 360px; }
-    }
-  </style>
 </head>
 <body>
 
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- NAV -->
   <nav class="nav">
     <div class="nav__inner">
       <a href="home.html" class="nav__logo">J<span>M</span></a>
@@ -89,90 +33,91 @@
 
   <main id="main" class="nav-offset">
 
-    <!-- PAGE HEADER -->
     <div class="page-header">
       <div class="container">
-        <h1>Portfolio</h1>
+        <h1 style="color: var(--secondary);">Portfolio</h1>
       </div>
     </div>
 
     <section>
       <div class="container">
 
-        <!-- ── PROJECT 1: THE CLIMB ── -->
+
         <div class="project-block">
           <div class="project-block__header">
-            <div>
+            <div class="project-block__info">
               <span class="eyebrow">Photography &amp; Visual Design</span>
               <h2>The Climb</h2>
               <p>A photo essay inspired by Miley Cyrus's "The Climb" — a series of landscapes shot in the Colorado Rockies paired with handwritten song lyrics. Each image explores themes of perseverance, movement, and perspective through editorial composition and photo manipulation.</p>
-              <ul class="skills" style="margin-top: var(--space-2);">
+              <ul class="skills">
                 <li class="skill-tag">Photography</li>
                 <li class="skill-tag">Photo Editing</li>
                 <li class="skill-tag">Visual Storytelling</li>
                 <li class="skill-tag">Editorial Design</li>
               </ul>
             </div>
-            <a href="Climbing.pdf" download="Julia_Miyamoto_The_Climb.pdf" class="button button--outline">
-              ↓ Download PDF
-            </a>
           </div>
 
           <div class="pdf-wrap">
-            <object data="Climbing.pdf" type="application/pdf" aria-label="The Climb photo essay PDF">
-                <a href="Climbing.pdf" download="Julia_Miyamoto_The_Climb.pdf" class="button">↓ Download PDF</a>
-                <a href="Climbing.pdf" target="_blank" rel="noopener" class="button button--outline" style="margin-top: 8px;">Open in New Tab</a>
+            <object data="Climbing.pdf" type="application/pdf" aria-label="The Climb photo essay">
+              <div class="pdf-fallback">
+                <p>Your browser can't show this PDF inline.</p>
+                <a href="Climbing.pdf" download class="button">&#8595; Download PDF</a>
+                <a href="Climbing.pdf" target="_blank" rel="noopener" class="button button--outline">Open in new tab</a>
               </div>
             </object>
           </div>
         </div>
 
+        
         <div class="project-block">
           <div class="project-block__header">
-            <div>
+            <div class="project-block__info">
               <span class="eyebrow">Branding &amp; Packaging Design</span>
               <h2>Jules Juice Box</h2>
-              <p>"Because you still deserve recess." A packaging design project for a line of alcoholic juice boxes — Margarita, Cosmopolitan, and Espresso Martini. The brand concept gives classic cocktails a nostalgic childhood twist with clean ingredients and a playful vintage illustration style.</p>
-              <ul class="skills" style="margin-top: var(--space-2);">
+              <p>"Because you still deserve recess." A packaging design project for a line of alcoholic juice boxes — Margarita, Cosmopolitan, and Espresso Martini. The concept gives classic cocktails a nostalgic childhood twist with a playful vintage illustration style.</p>
+              <ul class="skills">
                 <li class="skill-tag">Branding</li>
                 <li class="skill-tag">Packaging Design</li>
                 <li class="skill-tag">Typography</li>
-                <li class="skill-tag">Illustration</li>
                 <li class="skill-tag">Color Theory</li>
               </ul>
             </div>
           </div>
 
           <div class="pdf-wrap">
-            <object data="Jules-Juice.pdf" type="application/pdf" aria-label="Jules Juice Box packaging design PDF">
+            <object data="Project-3.pdf" type="application/pdf" aria-label="Jules Juice Box packaging design">
               <div class="pdf-fallback">
-                
+                <p>Your browser can't show this PDF inline.</p>
+                <a href="Project-3.pdf" download class="button">&#8595; Download PDF</a>
+                <a href="Project-3.pdf" target="_blank" rel="noopener" class="button button--outline">Open in new tab</a>
               </div>
             </object>
           </div>
-        
         </div>
 
-        <!-- ── PROJECT 3: LAMP ── -->
+
         <div class="project-block">
           <div class="project-block__header">
-            <div>
+            <div class="project-block__info">
               <span class="eyebrow">Product Design &amp; Fabrication</span>
               <h2>Acrylic Lamp</h2>
-              <p>A fabricated lamp designed in CAD and built from laser-cut acrylic panels. The design features a bold magenta shade on a clear acrylic base housing the light source. Documented with orthographic views, perspective renders, and final fabricated photos showing the lamp illuminated.</p>
-              <ul class="skills" style="margin-top: var(--space-2);">
+              <p>A lamp designed in CAD and built from laser-cut acrylic panels. The design features a bold magenta shade on a clear acrylic base. Documented with orthographic views, perspective renders, and photos of the finished lamp illuminated.</p>
+              <ul class="skills">
                 <li class="skill-tag">CAD Modeling</li>
                 <li class="skill-tag">Laser Cutting</li>
                 <li class="skill-tag">Fabrication</li>
                 <li class="skill-tag">Product Design</li>
-                <li class="skill-tag">Technical Drawing</li>
               </ul>
             </div>
           </div>
 
           <div class="pdf-wrap">
-            <object data="Lamp.pdf" type="application/pdf" aria-label="Acrylic lamp design and fabrication PDF">
+            <object data="Lamp.pdf" type="application/pdf" aria-label="Acrylic lamp design and fabrication">
               <div class="pdf-fallback">
+                <p>Your browser can't show this PDF inline.</p>
+                <a href="Lamp.pdf" download class="button">&#8595; Download PDF</a>
+                <a href="Lamp.pdf" target="_blank" rel="noopener" class="button button--outline">Open in new tab</a>
               </div>
             </object>
           </div>
@@ -181,13 +126,12 @@
       </div>
     </section>
 
-    <!-- CTA BANNER -->
     <section class="cta-banner">
       <div class="container">
         <div class="cta-banner__inner">
           <div>
-            <span class="eyebrow" style="color: var(--accent);">Have a project in mind?</span>
-            <h2 style="color: var(--white); margin-bottom: 0;">Let's collaborate.</h2>
+            <span class="eyebrow" style="color: #E8A87C;">Have a project in mind?</span>
+            <h2 style="color: #FDFBF8; margin-bottom: 0;">Let's collaborate.</h2>
           </div>
           <div class="cta-banner__actions">
             <a href="contact.html" class="button">Get In Touch</a>
