@@ -30,7 +30,7 @@ const types = [
   { color: "blue",   change:  5   },
   { color: "red",    change: -5   },
   { color: "green",  change:  1   },
-  { color: "pink",   change: -1   },
+  { color: "hotpink",   change: -1   },
   { color: "orange", change: null },
 ];
  
