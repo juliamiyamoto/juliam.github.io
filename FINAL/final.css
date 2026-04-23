@@ -1,47 +1,68 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
-  margin: 0;
-  background: #111;
-  color: white;
+  /* soft spring sky — pale blue top to warm blush bottom */
+  background: linear-gradient(180deg, #c9eaff 0%, #dff5e3 40%, #fde8f0 100%);
+  min-height: 100vh;
+  overflow: hidden;
   font-family: sans-serif;
+  color: #3a2a4a;
   text-align: center;
+  user-select: none;
 }
- 
+
 h1 {
-  margin: 16px 0 4px;
+  padding: 14px 12px 4px;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: 10;
+  color: #6a3fa0;
+  text-shadow: 0 1px 8px rgba(200,150,255,0.4);
 }
- 
+
 p {
-    text-align: center; 
-  width: 60%;         
-  margin: 0 auto;  
-  font-size: 0.85rem;
-  color: #aaa;
+  font-size: 0.72rem;
+  color: #7a5a8a;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px 6px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 10;
 }
- 
+
+#hud {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 4px 0;
+  position: relative;
+  z-index: 10;
+  color: #5a3090;
+  text-shadow: 0 1px 6px rgba(180,120,255,0.4);
+}
+
+#submit {
+  margin-top: 6px;
+  padding: 8px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: rgba(255,255,255,0.45);
+  color: #6a3fa0;
+  border: 2px solid rgba(180,120,220,0.6);
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+  font-weight: bold;
+}
+
+#submit:hover { background: rgba(255,255,255,0.7); }
+
 canvas {
   display: block;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
- 
-#hud {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
- 
-#submit {
-  padding: 10px 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  background: #222;
-  color: white;
-  border: 2px solid white;
-  border-radius: 6px;
-}
- 
-#submit:hover {
-  background: #444;
+  top: 0; left: 0;
+  z-index: 1;
+  cursor: crosshair;
 }
