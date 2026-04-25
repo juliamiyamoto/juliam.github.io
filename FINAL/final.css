@@ -2,11 +2,11 @@
 
 body {
   /* soft spring sky — pale blue top to warm blush bottom */
-  background: linear-gradient(180deg, #c9eaff 0%, #dff5e3 40%, #fde8f0 100%);
+  background: linear-gradient(180deg, #AFEEEE 0%, white 100%);
   min-height: 100vh;
   overflow: hidden;
   font-family: sans-serif;
-  color: #3a2a4a;
+  color: hotpink;
   text-align: center;
   user-select: none;
 }
@@ -16,20 +16,11 @@ h1 {
   font-size: 1.3rem;
   position: relative;
   z-index: 10;
-  color: #6a3fa0;
+  color: hotpink;
   text-shadow: 0 1px 8px rgba(200,150,255,0.4);
 }
 
-p {
-  font-size: 0.72rem;
-  color: #7a5a8a;
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 0 16px 6px;
-  line-height: 1.5;
-  position: relative;
-  z-index: 10;
-}
+
 
 #hud {
   font-size: 1.5rem;
@@ -37,7 +28,7 @@ p {
   padding: 4px 0;
   position: relative;
   z-index: 10;
-  color: #5a3090;
+  color: hotpink;
   text-shadow: 0 1px 6px rgba(180,120,255,0.4);
 }
 
@@ -47,8 +38,8 @@ p {
   font-size: 1rem;
   cursor: pointer;
   background: rgba(255,255,255,0.45);
-  color: #6a3fa0;
-  border: 2px solid rgba(180,120,220,0.6);
+  color: hotpink;
+  border: 2px solid rgb(253, 139, 223);
   border-radius: 20px;
   position: relative;
   z-index: 10;
